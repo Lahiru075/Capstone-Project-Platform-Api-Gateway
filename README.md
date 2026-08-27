@@ -87,7 +87,3 @@ Follow the lecture guidelines, refer to the lecture video for more information a
 The gateway will be available at: `http://localhost:7000`
 
 ---
-
-## 📄 License
-
-This project was developed as part of the Enterprise Cloud Architecture university module (Capstone Project — Alternative Option).
