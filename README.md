@@ -2,9 +2,25 @@
 
 A reactive API Gateway built with Spring Cloud Gateway (WebFlux). It serves as the single entry point for all client requests, routing traffic to the appropriate microservices discovered via the Service-Registry.
 
+---
+
+## 📌 Student & Project Information
+
+| Field | Details |
+| :--- | :--- |
+| **Student Name** | Lahiru Lakshan |
+| **Student Number** | 241711074 |
+| **Slack Handle** | Lahiru Sanjeewa |
+| **GCP Project ID** | lahiru-gcp-lab |
+| **Submission Type** | Alternative Option (Capstone Project) |
+
+---
+
 ## About
 
 This project is part of the Enterprise Cloud Application (ECA) module in the Higher Diploma in Software Engineering (HDSE) program at the Institute of Software Engineering (IJSE). It is intended exclusively for students enrolled in this program.
+
+---
 
 ## Tech Stack
 
@@ -18,6 +34,8 @@ This project is part of the Enterprise Cloud Application (ECA) module in the Hig
 | Spring Cloud Config Client | Fetches config from Config-Server |
 | Spring Boot Actuator | Health & management endpoints |
 
+---
+
 ## Routing Table
 
 All requests go through `http://localhost:7000`. The gateway forwards them to the registered service instances.
@@ -27,6 +45,8 @@ All requests go through `http://localhost:7000`. The gateway forwards them to th
 | `student-service` | `/api/v1/students/**` | `lb://STUDENT-SERVICE` |
 | `program-service` | `/api/v1/programs/**` | `lb://PROGRAM-SERVICE` |
 | `enrollment-service` | `/api/v1/enrollments/**` | `lb://ENROLLMENT-SERVICE` |
+
+---
 
 ## Service Details
 
@@ -38,13 +58,19 @@ All requests go through `http://localhost:7000`. The gateway forwards them to th
 | Config Source | `http://localhost:9000` (Config-Server) |
 | Service Registry | `http://localhost:9001/eureka` |
 
+---
+
 ## CORS
 
 Cross-Origin Resource Sharing is configured globally to allow all origins, methods, and headers — suitable for development and the Next.js frontend webapp.
 
+---
+
 ## Getting Started
 
 Follow the lecture guidelines, refer to the lecture video for more information and how to get started correctly.
+
+---
 
 > **Important:** Config-Server and Service-Registry must be running before starting the Api-Gateway.
 
@@ -60,6 +86,8 @@ Follow the lecture guidelines, refer to the lecture video for more information a
 
 The gateway will be available at: `http://localhost:7000`
 
-## Need Help?
+---
 
-If you encounter any issues, feel free to reach out and start a discussion via the Slack workspace.
+## 📄 License
+
+This project was developed as part of the Enterprise Cloud Architecture university module (Capstone Project — Alternative Option).
